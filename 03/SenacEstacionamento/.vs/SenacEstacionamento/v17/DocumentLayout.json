@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\controllers\\veiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:controllers\\veiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\migrations\\primeiramigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:migrations\\primeiramigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\migrations\\primeiramigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:migrations\\primeiramigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|c:\\users\\vinicius.cmenezes\\documents\\uc6\\03\\senacestacionamento\\models\\veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF352807-0F97-4E83-ADDC-1913CEAC6FAC}|SenacEstacionamento.csproj|solutionrelative:models\\veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Veiculo.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Models\\Veiculo.cs",
+              "RelativeDocumentMoniker": "Models\\Veiculo.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Models\\Veiculo.cs*",
+              "RelativeToolTip": "Models\\Veiculo.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:18:38.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Migrations\\AppDbContextModelSnapshot.cs*",
+              "RelativeToolTip": "Migrations\\AppDbContextModelSnapshot.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:17:15.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PrimeiraMigration.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Migrations\\PrimeiraMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\PrimeiraMigration.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Migrations\\PrimeiraMigration.cs*",
+              "RelativeToolTip": "Migrations\\PrimeiraMigration.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:16:20.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PrimeiraMigration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Migrations\\PrimeiraMigration.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\PrimeiraMigration.Designer.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Migrations\\PrimeiraMigration.Designer.cs*",
+              "RelativeToolTip": "Migrations\\PrimeiraMigration.Designer.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:15:47.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Data\\AppDbContext.cs*",
+              "RelativeToolTip": "Data\\AppDbContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:14:32.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VeiculoController.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Controllers\\VeiculoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VeiculoController.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Controllers\\VeiculoController.cs*",
+              "RelativeToolTip": "Controllers\\VeiculoController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:12:49.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:12:29.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\SenacEstacionamento\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T23:08:33.635Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

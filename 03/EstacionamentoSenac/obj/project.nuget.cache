@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uxqpei2B1zU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vinicius.cmenezes\\Documents\\UC6\\03\\EstacionamentoSenac\\EstacionamentoSenac.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vinicius.cmenezes\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\vinicius.cmenezes\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
