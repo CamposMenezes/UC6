@@ -5,13 +5,6 @@ VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estacionamento.API", "EstacionamentoSenac.API\Estacionamento.API.csproj", "{6ED393F2-FF7C-4A92-894B-AFD0402D0A38}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estacionamento.MAUI", "Estacionamento.MAUI\Estacionamento.MAUI.csproj", "{3B001331-F102-4548-B99D-3FE3D2066933}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +15,6 @@ Global
 		{6ED393F2-FF7C-4A92-894B-AFD0402D0A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ED393F2-FF7C-4A92-894B-AFD0402D0A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ED393F2-FF7C-4A92-894B-AFD0402D0A38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B001331-F102-4548-B99D-3FE3D2066933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B001331-F102-4548-B99D-3FE3D2066933}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B001331-F102-4548-B99D-3FE3D2066933}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{3B001331-F102-4548-B99D-3FE3D2066933}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B001331-F102-4548-B99D-3FE3D2066933}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

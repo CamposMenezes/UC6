@@ -2,42 +2,42 @@
 @inject HttpClient Http
 @using Estacionamento.MAUI.Models
 
-@using Estacionamento.MAUI.Models
+<h3>Index</h3>
 
-<h3 class="text-center mb-3">Lista de Veiculos</h3>
-<a href="/veiculos/create" class="btn btn-primary mb-3">Novo Veiculo</a>
+<a href="/veiculos/create" class="btn btn-primary">Cadastrar</a>
 
-@if (true)
+@if (veiculos == null)
 {
-    <p><em>Carregando...</em></p>
+    <p>Carregando...</p>
 }
-else if (false)
+else if (!veiculos.Any())
 {
-    <p><em>Nenhum veiculo encontrado.</em></p>
+    <p>Nenhum veículo encontrado! .</p>
 }
 else
 {
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Id</th>
-                            <th>Placa</th>
-                            <th>Modelo</th>
-                            <th>Cor</th>                <th>Ações</th>
+                <th scope="col">Id</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Cor </th>
+                <th scope="col">Placa </th>
+                <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
-            @* @foreach (var veiculo in veiculos) *@
+            @foreach (var veiculo in veiculos)
             {
                 <tr>
-                    <td>Id</td>
-                    <td>Placa</td>
-                    <td>Modelo</td>
-                    <td>Cor</td>
+                    <td>@veiculo.Id</td>
+                    <td>@veiculo.Modelo</td>
                     <td>
-                        <a href="#" class="btn btn-sm btn-warning">Editar</a>
-                        <a href="#" class="btn btn-sm btn-info">Detalhes</a>
-                        <a href="#" class="btn btn-sm btn-danger">Excluir</a>
+                        <a href="/veiculos/edit/@veiculo.Id" class="btn btn-warning">Editar</a>
+                        <a href="/veiculos/details/@veiculo.Id" class="btn btn-info">Detalhes</a>
+                        <a href="/veiculos/delete/@veiculo.Id" class="btn btn-danger">
+                            <i class="bi bi-trash"></i>
+                        </a>
                     </td>
                 </tr>
             }
@@ -46,5 +46,10 @@ else
 }
 
 @code {
-   
+    List<Veiculo>? veiculos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        veiculos = await Http.GetFromJsonAsync<List<Veiculo>>("https://localhost:4000/api/Veiculos");
+    }
 }

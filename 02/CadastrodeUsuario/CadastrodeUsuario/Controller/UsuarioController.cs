@@ -1,17 +1,11 @@
-﻿using CadastrodeUsuario.Data;
-using CadastrodeUsuario.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CadastroDeUsuario.Data;
+using CadastroDeUsuario.Models;
 
-namespace CadastrodeUsuario.Controller
+namespace CadastroDeUsuario.Controller
 {
     internal class UsuarioController
     {
         private AppDbContext _context;
-
 
         public UsuarioController(AppDbContext context)
         {
@@ -21,152 +15,145 @@ namespace CadastrodeUsuario.Controller
         public void Adicionar()
         {
             Console.Clear();
-            #region Pedir Dados
-            Console.WriteLine("Primeiro nome: ");
-            string primeironome = Console.ReadLine();
+            #region Pedir_Dados
+            Console.Write("Primeiro Nome: ");
+            string primeiroNome = Console.ReadLine();
 
-            Console.WriteLine("Segundo Nome: ");
+            Console.Write("Sobrenome: ");
             string sobrenome = Console.ReadLine();
 
-            Console.WriteLine("Data de Nascimento: ");
+            Console.Write("Data de Nascimento: ");
             DateOnly nascimento = DateOnly.Parse(Console.ReadLine());
             #endregion
+
             var novoUsuario = new Usuario()
             {
                 DataNascimento = nascimento,
-                PrimeiroNome = primeironome,
+                PrimeiroNome = primeiroNome,
                 Sobrenome = sobrenome
             };
 
             _context.Usuarios.Add(novoUsuario);
             _context.SaveChanges();
 
-            Console.WriteLine("Usuário Cadastrado com sucesso! \nAperte qualquer tecla para finalizar.");
+            Console.WriteLine("Usuário Cadastrado");
             Console.ReadKey();
         }
 
-
         public void Listar()
         {
-            Console.Clear();
             var usuarios = _context.Usuarios.ToList();
 
-            if (!usuarios.Any())
+            if (usuarios.Count() == 0)
             {
-                Console.WriteLine("Nenhum usuário cadastrado!");
+                Console.WriteLine("Nenum usuário cadastrado!");
             }
             else
             {
                 foreach (var usuario in usuarios)
                 {
-                    Console.WriteLine($"ID: {usuario.id} | Nome: {usuario.PrimeiroNome}");
+                    Console.WriteLine($"ID: {usuario.Id} | Nome: {usuario.PrimeiroNome}");
                 }
-
             }
 
-            Console.WriteLine("\nPressione qualquer tecla para voltar");
+            Console.WriteLine("\nPressione qualquer telca para voltar.");
             Console.ReadKey();
         }
 
-         public void Detalhes ()
+        public void Detalhes()
         {
             // Dizer onde estou
             Console.Clear();
-            Console.WriteLine("====Detalhes do Usuário====");
+            Console.WriteLine("==== Detalhes do Usuário ====");
             
-
             // Pedir o ID do usuário
-            Console.WriteLine("Digite o ID do usuário: ");
+            Console.Write("Digite o ID do usuário: ");
             var idUsuario = int.Parse(Console.ReadLine());
 
-            // Buscar usuário no banco de dados
-            var usuario = _context.Usuarios.FirstOrDefault(user => user.id == idUsuario); 
-            
+            // Buscar o usuário no banco de dados
+            var usuario = _context.Usuarios
+                .FirstOrDefault(user => user.Id == idUsuario);
 
             // Se não encontrar, avisar o usuário
-
             if (usuario == null)
             {
                 Console.WriteLine("\nUsuário não encontrado!");
             }
-
-            // Se econtrar, mostrar os detalhes do usuário
-            else
+            else // Se encontrar, mostrar os detalhes do usuário
             {
-                Console.WriteLine("==== Dados do Usuário ====");
-                Console.WriteLine($"ID: {usuario.id}");
+                Console.WriteLine("--- Dados do Usuário ---");
+                Console.WriteLine($"ID: {usuario.Id}");
                 Console.WriteLine($"Nome: {usuario.PrimeiroNome}");
                 Console.WriteLine($"Sobrenome: {usuario.Sobrenome}");
                 Console.WriteLine($"Nascimento: {usuario.DataNascimento}");
             }
-            Console.WriteLine("Pressione qualquer tecla para voltar.");
+
+            Console.WriteLine("\nPressione qualquer tecla para voltar.");
             Console.ReadKey();
         }
 
-        public void Remover ()
+        public void Remover()
         {
             Console.Clear();
             Console.WriteLine("==== Remover Usuário ====");
-            Console.WriteLine("Digite o ID do usuário");
-            var idUsuario = int.Parse (Console.ReadLine());
+            Console.Write("Digite o ID do usuário: ");
+            var idUsuario = int.Parse(Console.ReadLine());
 
-            // Buscar usuário no banco de dados
-            var usuarioParaDeletar = _context.Usuarios.FirstOrDefault( user => user.id == idUsuario);
+            // Buscar o usuário no banco de dados
+            var usuarioParaDeletar = _context.Usuarios
+                .FirstOrDefault(user => user.Id == idUsuario);
 
-            // Se não enontrar, avisar o Usuário
-            if (usuarioParaDeletar == null )
+            // Se não encontrar, avisar o usuário
+            if(usuarioParaDeletar == null)
             {
                 Console.WriteLine("\nUsuário não encontrado!");
-                Console.ReadKey ();
+                Console.ReadKey();
                 return;
-
             }
+
             // Se encontrar, deletar o usuário
             _context.Usuarios.Remove(usuarioParaDeletar);
             _context.SaveChanges();
 
             Console.WriteLine("\nUsuário removido com sucesso!");
             Console.ReadKey();
-            
         }
+
         public void AtualizarUsuario()
         {
             Console.Clear();
-            Console.WriteLine("==== Atualizar Usuario ====");
-            Console.WriteLine("Digite o ID do usuário: ");
-            var idInformado = int.Parse(Console.ReadLine());
+            Console.WriteLine("=== Atualizar Usuário ===");
+            Console.Write("Digite o ID do usuário que deseja atualizar: ");
+            var idUsuario = int.Parse(Console.ReadLine());
 
-            var usuarioParaAtualizar = _context.Usuarios.FirstOrDefault(u => u.id == idInformado);
+            var usuarioParaAtualizar = _context.Usuarios
+                .FirstOrDefault(user => user.Id == idUsuario);
 
-            if (usuarioParaAtualizar == null)
+            if(usuarioParaAtualizar == null)
             {
-                Console.WriteLine("Usuário não encontrado!");
+                Console.WriteLine("\nUsuário não encontrado!");
                 Console.ReadKey();
                 return;
             }
 
-            Console.WriteLine($"\nEditando usuário: {usuarioParaAtualizar.PrimeiroNome}");
-            Console.WriteLine("Novo primeiro nome: ");
-            string novoPrimeiroNome = Console.ReadLine() ?? "";
-            Console.WriteLine("Novo Sobrenome: ");
-            string novoSobrenome = Console.ReadLine() ?? "";
-            Console.WriteLine("Nova Data de Nascimento (AAAA-MM-DD): ");
-            DateOnly novaDataNascimento = DateOnly.Parse(Console.ReadLine() ?? "");
+            Console.Write("Novo Primeiro Nome: ");
+            string primerioNome = Console.ReadLine() ?? "";
 
-            usuarioParaAtualizar.PrimeiroNome = novoPrimeiroNome;
-            usuarioParaAtualizar.Sobrenome = novoSobrenome;
-            usuarioParaAtualizar.DataNascimento = novaDataNascimento;
+            Console.Write("Novo Sobrenome: ");
+            string sobrenome = Console.ReadLine() ?? "";
+
+            Console.Write("Nova Data de Nascimento: ");
+            DateOnly dataNascimento = DateOnly.Parse(Console.ReadLine() ?? "");
+
+            usuarioParaAtualizar.PrimeiroNome = primerioNome;
+            usuarioParaAtualizar.Sobrenome = sobrenome;
+            usuarioParaAtualizar.DataNascimento = dataNascimento;
 
             _context.Usuarios.Update(usuarioParaAtualizar);
             _context.SaveChanges();
 
             Console.WriteLine("\nUsuário atualizado com sucesso!");
             Console.ReadKey();
-
         }
-
-
     }
-
 }
-

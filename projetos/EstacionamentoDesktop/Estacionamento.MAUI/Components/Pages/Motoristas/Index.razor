@@ -6,11 +6,11 @@
 
 <a href="/motoristas/create" class="btn btn-primary mb-3">Novo Motorista</a>
 
-@if(true)
+@if(motoristas == null)
 {
     <p><em>Carregando...</em></p>
 }
-else if (false)
+else if (!motoristas.Any())
 {
     <p><em>Nenhum motorista encontrado.</em></p>
 }
@@ -27,17 +27,17 @@ else
             </tr>
         </thead>
         <tbody>
-            @* @foreach (var motorista in motoristas) *@
+             @foreach (var motorista in motoristas) 
             {
                 <tr>
-                    <td>Id</td>
-                    <td>Nome</td>
-                    <td>Cpf</td>
-                    <td>Telefone</td>
+                    <td>@motorista.Id</td>
+                    <td>@motorista.Nome</td>
+                    <td>@motorista.Cpf</td>
+                    <td>@motorista.Telefone</td>
                     <td>
-                        <a href="#" class="btn btn-sm btn-warning">Editar</a>
-                        <a href="#" class="btn btn-sm btn-info">Detalhes</a>
-                        <a href="#" class="btn btn-sm btn-danger">Excluir</a>
+                        <a href="/motoristas/edit/@motorista.Id" class="btn btn-sm btn-warning">Editar</a>
+                        <a href="/motoristas/details/@motorista.Id" class="btn btn-sm btn-info">Detalhes</a>
+                        <a href="/motoristas/delete/@motorista.Id" class="btn btn-sm btn-danger">Excluir</a>
                     </td>
                 </tr>
             }
@@ -47,5 +47,10 @@ else
 
 
 @code {
-   
+    List<Motorista>? motoristas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        motoristas = await Http.GetFromJsonAsync<List<Motorista>>("https://localhost:4000/api/Motoristas");
+    }
 }

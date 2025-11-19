@@ -31,9 +31,9 @@ public partial class EstacionamentoDbContext : DbContext
     {
         modelBuilder.Entity<Cliente>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Clientes__3213E83FEB133963");
+            entity.HasKey(e => e.Id).HasName("PK__Clientes__3213E83F8048B6A8");
 
-            entity.HasIndex(e => e.Cpf, "UQ__Clientes__D836E71F1E6F9B21").IsUnique();
+            entity.HasIndex(e => e.Cpf, "UQ__Clientes__D836E71F18D0F8B4").IsUnique();
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Cpf)
@@ -52,7 +52,7 @@ public partial class EstacionamentoDbContext : DbContext
 
         modelBuilder.Entity<RegistrosEstacionamento>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Registro__3213E83FAE8912A0");
+            entity.HasKey(e => e.Id).HasName("PK__Registro__3213E83F747185E0");
 
             entity.ToTable("RegistrosEstacionamento");
 
@@ -78,7 +78,7 @@ public partial class EstacionamentoDbContext : DbContext
 
         modelBuilder.Entity<Vaga>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Vagas__3213E83FB3B6A257");
+            entity.HasKey(e => e.Id).HasName("PK__Vagas__3213E83F50995EDB");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Localizacao)
@@ -93,9 +93,9 @@ public partial class EstacionamentoDbContext : DbContext
 
         modelBuilder.Entity<Veiculo>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Veiculos__3213E83F55B6337B");
+            entity.HasKey(e => e.Id).HasName("PK__Veiculos__3213E83F3D45F7B9");
 
-            entity.HasIndex(e => e.Placa, "UQ__Veiculos__0C05742506E1085E").IsUnique();
+            entity.HasIndex(e => e.Placa, "UQ__Veiculos__0C057425A2F2F118").IsUnique();
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.ClienteId).HasColumnName("cliente_id");

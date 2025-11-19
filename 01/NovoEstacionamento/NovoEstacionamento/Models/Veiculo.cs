@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NovoEstacionamento.Models
 {
@@ -10,10 +7,11 @@ namespace NovoEstacionamento.Models
     {
         public int Id { get; set; }
         public int ClienteId { get; set; }
-        public string Placa { get; set; }   
-        public string Modelo { get; set; }  
-        public string Cor {  get; set; }
-    }
+        public string Placa { get; set; }
+        public string Modelo { get; set; }
+        public string? Cores { get; set; }
 
-    // Veiculo.Cliente.Nome = " João Silva ";
+        // PROPRIEDADE DE NAVEGAÇÃO
+        public Cliente Cliente { get; set; }
+    }
 }
